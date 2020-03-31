@@ -5,7 +5,7 @@
  */
 package MaquinaExpendedoraProductos.modelo;
 
-import MaquinaExpendorausuarios.modelo.Cliente;
+import MaquinaExpendorauUsarios.modelo.Cliente;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -114,12 +114,8 @@ public abstract class Producto implements Comparable, Serializable, Comprable{
     
     @Override
     public boolean hayStock(){
-        if (this.stock>0) {
-            return true;
-        }else{
-            return false;
+        return this.stock>0;
         }
-}
     
     
     

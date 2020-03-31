@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package MaquinaExpendorausuarios.modelo;
+package MaquinaExpendorauUsarios.modelo;
 
 /**
  * Clase padre de los usuarios

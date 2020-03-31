@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package MaquinaExpendedoraProductos.modelo;
-import MaquinaExpendorausuarios.modelo.Cliente;
+import MaquinaExpendorauUsarios.modelo.Cliente;
 /**
  *
  * @author Ricardo
