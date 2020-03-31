@@ -5,7 +5,7 @@
  */
 package MaquinaExpendedoraProductos.modelo;
 
-import MaquinaExpendorausuarios.modelo.Cliente;
+import MaquinaExpendorauUsarios.modelo.Cliente;
 import java.io.Serializable;
 import java.util.Objects;
 
