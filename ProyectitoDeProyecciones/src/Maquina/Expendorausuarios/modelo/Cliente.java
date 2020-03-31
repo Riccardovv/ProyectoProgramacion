@@ -1,12 +1,14 @@
 
 package Maquina.Expendorausuarios.modelo;
 
+import java.io.Serializable;
+
 /**
  * Clase hija de los usuarios
  * @author Javier Rubio  
  * @see Usuario
  */
-public class Cliente extends Usuario{
+public class Cliente extends Usuario implements Serializable{
     //constantes
   
     //Atributos

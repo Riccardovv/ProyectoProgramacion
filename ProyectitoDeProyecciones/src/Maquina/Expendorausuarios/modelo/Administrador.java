@@ -5,11 +5,13 @@
  */
 package Maquina.Expendorausuarios.modelo;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Pc clase
  */
-public class Administrador extends Usuario{
+public class Administrador extends Usuario implements Serializable{
      //constantes
    
 
@@ -17,9 +19,9 @@ public class Administrador extends Usuario{
     private boolean poderes;
    
     //Constructor
-     public Administrador( Usuario otro) {
+     public Administrador( Administrador otro) {
         super(otro);
-        //this.poderes =otro.isPoderes;
+        this.poderes =otro.isPoderes();
     }
 
    

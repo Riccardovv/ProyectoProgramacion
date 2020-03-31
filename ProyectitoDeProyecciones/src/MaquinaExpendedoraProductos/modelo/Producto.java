@@ -5,11 +5,13 @@
  */
 package MaquinaExpendedoraProductos.modelo;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Ricardo
  */
-public abstract class Producto implements Comparable{
+public abstract class Producto implements Comparable, Serializable{
     private double precio;
     private String nombre;
     private String Marca;
@@ -20,6 +22,7 @@ public abstract class Producto implements Comparable{
         this.Marca = Marca;
     }
     
+    @Override
     public int compareTo(Object o){
         
         try {
