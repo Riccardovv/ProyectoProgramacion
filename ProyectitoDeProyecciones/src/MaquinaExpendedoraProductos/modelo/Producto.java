@@ -10,5 +10,5 @@ package MaquinaExpendedoraProductos.modelo;
  * @author Ricardo
  */
 public class Producto {
-    
+    //hnhjfhfhdh
 }
