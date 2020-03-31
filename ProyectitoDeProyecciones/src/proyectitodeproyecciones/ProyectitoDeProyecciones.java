@@ -15,10 +15,7 @@ public class ProyectitoDeProyecciones {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //hola guapo
-        //hola que tal
-        //prueba nosecuantas
-        //funciona
+     //gfadsgsgadsfgsdf
     }
     
 }
