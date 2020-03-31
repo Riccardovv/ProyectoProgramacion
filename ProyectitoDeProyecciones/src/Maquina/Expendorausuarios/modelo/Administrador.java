@@ -5,7 +5,9 @@
  */
 package Maquina.Expendorausuarios.modelo;
 
+import MaquinaExpendedoraProductos.modelo.Producto;
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  *
@@ -32,13 +34,31 @@ public class Administrador extends Usuario implements Serializable{
     //Getters y setters
 
     
-    //metodos
-
+    
     public boolean isPoderes() {
         return poderes;
     }
+    //tostring
+    @Override
+    public String toString() {
+        return super.toString()+"Administrador{" + "poderes=" + poderes + '}';
+    }    
+    
+    //metodos
+
+    public void rellenarStock(ArrayList <Producto> productos){
+        
+    }
+    public float cambiarPrecio(ArrayList <Producto> productos, int posicion,int precioNuevo){
+        float precio=0;
+        float valorProducto = productos.get(posicion).getPrecio();
+        
+        
+        return precio;
+    }
 
 
+    
 
 
 
