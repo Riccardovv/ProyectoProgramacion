@@ -17,9 +17,9 @@ public class Administrador extends Usuario{
     private boolean poderes;
    
     //Constructor
-     public Administrador( Usuario otro) {
+     public Administrador( Administrador otro) {
         super(otro);
-        //this.poderes =otro.isPoderes;
+        this.poderes =otro.isPoderes();
     }
 
    
@@ -28,13 +28,13 @@ public class Administrador extends Usuario{
         this.poderes = poderes;
     }
     //Getters y setters
-
-    
-    //metodos
-
     public boolean isPoderes() {
         return poderes;
     }
+    
+    //metodos
+
+
 
 
 

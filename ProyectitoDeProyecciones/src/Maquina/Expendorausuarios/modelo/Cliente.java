@@ -6,7 +6,7 @@ package Maquina.Expendorausuarios.modelo;
  * @author Javier Rubio  
  * @see Usuario
  */
-public class Cliente extends Usuario{
+public class Cliente extends Usuario {
     //constantes
   
     //Atributos
@@ -27,10 +27,6 @@ public class Cliente extends Usuario{
   
     
     //Getters y setters
-    
-    
-    //metodos
-
     public float getSaldo() {
         return saldo;
     }
@@ -38,6 +34,10 @@ public class Cliente extends Usuario{
     public int getIdCliente() {
         return idCliente;
     }
+
+
+    
+    //metodos
 
 
  
