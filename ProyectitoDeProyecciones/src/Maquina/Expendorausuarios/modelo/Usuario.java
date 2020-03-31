@@ -10,7 +10,7 @@ package Maquina.Expendorausuarios.modelo;
  * @author Javier Rubio  
  * @version 1.0
  */
-public abstract class  Usuario {
+public abstract class  Usuario  {
 
     //constantes
   
