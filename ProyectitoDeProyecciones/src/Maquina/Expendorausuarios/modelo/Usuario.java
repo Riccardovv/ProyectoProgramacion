@@ -10,5 +10,5 @@ package Maquina.Expendorausuarios.modelo;
  * @author Pc clase
  */
 public class Usuario {
-    
+    //Hola que tal soy colosal  tengo una polla descomunal
 }
