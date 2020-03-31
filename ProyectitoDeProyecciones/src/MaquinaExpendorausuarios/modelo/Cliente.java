@@ -1,5 +1,5 @@
 
-package Maquina.Expendorausuarios.modelo;
+package MaquinaExpendorausuarios.modelo;
 
 import java.io.Serializable;
 
