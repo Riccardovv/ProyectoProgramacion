@@ -5,6 +5,7 @@
  */
 package MaquinaExpendedoraProductos.modelo;
 
+import MaquinaExpendorausuarios.modelo.Cliente;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -12,7 +13,7 @@ import java.util.Objects;
  *
  * @author Ricardo
  */
-public abstract class Producto implements Comparable, Serializable{
+public abstract class Producto implements Comparable, Serializable, Comprable{
     private double precio;
     private String nombre;
     private String Marca;
@@ -99,9 +100,26 @@ public abstract class Producto implements Comparable, Serializable{
         }
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Producto{" + "precio=" + precio + ", nombre=" + nombre + ", Marca=" + Marca + ", stock=" + stock + '}';
+    }
     
+    @Override
+    public boolean saldoSuficiente(Cliente c){
+        
+        return c.getSaldo()>this.precio;
+    }
     
-    
+    @Override
+    public boolean hayStock(){
+        if (this.stock>0) {
+            return true;
+        }else{
+            return false;
+        }
+}
     
     
     
