@@ -11,11 +11,13 @@ package proyectitodeproyecciones;
  */
 public class ProyectitoDeProyecciones {
 
-    /**
-     * @param args the command line arguments
-     */
+
+    protected String codigo;
+    protected String titulo;
+    protected int anioPublicacion;
     public static void main(String[] args) {
         //hola guapo
+   
     }
     
 }
