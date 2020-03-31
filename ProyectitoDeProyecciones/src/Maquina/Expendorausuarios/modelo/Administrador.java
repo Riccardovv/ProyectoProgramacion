@@ -19,7 +19,7 @@ public class Administrador extends Usuario{
     //Constructor
      public Administrador( Usuario otro) {
         super(otro);
-        this.poderes =otro.isPoderes;
+        //this.poderes =otro.isPoderes;
     }
 
    
