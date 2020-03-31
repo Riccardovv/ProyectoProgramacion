@@ -9,6 +9,38 @@ package MaquinaExpendedoraProductos.modelo;
  *
  * @author Ricardo
  */
-public class Producto {
-    //hnhjfhfhdh
+public abstract class Producto implements Comparable{
+    private double precio;
+    private String nombre;
+    private String Marca;
+
+    public Producto(double precio, String nombre, String Marca) {
+        this.precio = precio;
+        this.nombre = nombre;
+        this.Marca = Marca;
+    }
+    
+    public int compareTo(Object o){
+        
+        try {
+            Producto pAux=(Producto)o;
+        } catch (Exception e) {
+            //mostraria un error con el jframe              
+        }
+        
+        Producto pAux=(Producto)o;
+        
+        if (this==pAux) {
+            return 0;
+        }else if(this.precio>pAux.precio){
+            return -1;
+        }else{
+            return 0;
+        }
+    
+    }
+    
+    
+    
+    
 }
