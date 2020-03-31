@@ -35,6 +35,11 @@ public class Bebida extends Producto{
         this.tieneAlcohol = tieneAlcohol;
     }
 
+    @Override
+    public String toString() {
+        return super.toString()+"Bebida{" + "volumen=" + volumen + ", tieneAlcohol=" + tieneAlcohol + '}';
+    }
+
      
     
 }

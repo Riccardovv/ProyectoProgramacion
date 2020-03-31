@@ -18,6 +18,7 @@ public class Comida extends Producto{
         this.peso = peso;
     }
 
+    
     public int getMesConsumoPreferente() {
         return mesConsumoPreferente;
     }
@@ -35,6 +36,10 @@ public class Comida extends Producto{
     }
 
     
+@Override
+    public String toString() {
+        return super.toString()+"Comida{" + "mesConsumoPreferente=" + mesConsumoPreferente + ", peso=" + peso + '}';
+    }
 
    
 

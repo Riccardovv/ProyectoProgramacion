@@ -6,6 +6,7 @@
 package MaquinaExpendedoraProductos.modelo;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  *
@@ -69,6 +70,38 @@ public abstract class Producto implements Comparable, Serializable{
     public void setMarca(String Marca) {
         this.Marca = Marca;
     }
+
+    
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Producto other = (Producto) obj;
+        if (Double.doubleToLongBits(this.precio) != Double.doubleToLongBits(other.precio)) {
+            return false;
+        }
+        if (this.stock != other.stock) {
+            return false;
+        }
+        if (!Objects.equals(this.nombre, other.nombre)) {
+            return false;
+        }
+        if (!Objects.equals(this.Marca, other.Marca)) {
+            return false;
+        }
+        return true;
+    }
+    
+    
+    
     
     
     

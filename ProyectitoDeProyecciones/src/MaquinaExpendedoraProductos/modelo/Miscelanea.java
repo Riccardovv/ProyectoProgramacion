@@ -35,6 +35,12 @@ public class Miscelanea extends Producto {
     public void setParaAdultos(boolean paraAdultos) {
         this.paraAdultos = paraAdultos;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+"Miscelanea{" + "peso=" + peso + ", paraAdultos=" + paraAdultos + '}';
+    }
+    
     
     
     
