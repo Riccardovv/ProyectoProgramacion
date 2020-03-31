@@ -15,12 +15,15 @@ public abstract class Producto implements Comparable, Serializable{
     private double precio;
     private String nombre;
     private String Marca;
+    private int stock;
 
-    public Producto(double precio, String nombre, String Marca) {
+    public Producto(double precio, String nombre, String Marca, int stock) {
         this.precio = precio;
         this.nombre = nombre;
         this.Marca = Marca;
+        this.stock=stock;
     }
+   
     
     @Override
     public int compareTo(Object o){
@@ -41,6 +44,30 @@ public abstract class Producto implements Comparable, Serializable{
             return 0;
         }
     
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getMarca() {
+        return Marca;
+    }
+
+    public void setMarca(String Marca) {
+        this.Marca = Marca;
     }
     
     

@@ -13,16 +13,28 @@ public class Bebida extends Producto{
     private int volumen;
     private boolean tieneAlcohol;
 
-    public Bebida(int volumen, boolean tieneAlcohol, double precio, String nombre, String Marca) {
-        super(precio, nombre, Marca);
+    public Bebida(int volumen, boolean tieneAlcohol, double precio, String nombre, String Marca, int stock) {
+        super(precio, nombre, Marca, stock);
         this.volumen = volumen;
         this.tieneAlcohol = tieneAlcohol;
     }
 
-    
-  
-    
-    
-    
+    public int getVolumen() {
+        return volumen;
+    }
+
+    public void setVolumen(int volumen) {
+        this.volumen = volumen;
+    }
+
+    public boolean isTieneAlcohol() {
+        return tieneAlcohol;
+    }
+
+    public void setTieneAlcohol(boolean tieneAlcohol) {
+        this.tieneAlcohol = tieneAlcohol;
+    }
+
+     
     
 }
