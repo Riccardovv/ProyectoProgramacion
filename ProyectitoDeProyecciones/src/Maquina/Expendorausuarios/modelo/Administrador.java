@@ -49,12 +49,12 @@ public class Administrador extends Usuario implements Serializable{
     public void rellenarStock(ArrayList <Producto> productos){
         
     }
-    public float cambiarPrecio(ArrayList <Producto> productos, int posicion,int precioNuevo){
-        float precio=0;
-        float valorProducto = productos.get(posicion).getPrecio();
+   /* public void cambiarPrecio(ArrayList <Producto> productos, int posicion,int precioNuevo){
+        productos.get(posicion).getPrecio()= precioNuevo;
         
+    }*/
+    public void reiniciarMaquina(){
         
-        return precio;
     }
 
 

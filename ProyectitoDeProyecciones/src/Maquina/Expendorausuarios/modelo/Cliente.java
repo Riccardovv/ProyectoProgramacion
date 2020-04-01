@@ -4,6 +4,7 @@ package Maquina.Expendorausuarios.modelo;
 import MaquinaExpendedoraProductos.modelo.Producto;
 import java.io.Serializable;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  * Clase hija de los usuarios
@@ -14,8 +15,8 @@ public class Cliente extends Usuario implements Serializable{
     //constantes
   
     //Atributos
-    private float saldo;
-    private int idCliente;
+    protected float saldo;
+    protected int idCliente;
     
     //Constructor
     public Cliente(Cliente otro) {
@@ -28,10 +29,24 @@ public class Cliente extends Usuario implements Serializable{
         this.saldo = saldo;
         this.idCliente = idCliente;
     }
-  
+    public Cliente() {
+        this.saldo = saldo;
+        this.idCliente = idCliente;
+        this.nombreUsuario = nombreUsuario;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+    }
     
-    //Getters y setters
-    
+     //Getters y setters
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
+    }
+   
+    public void setIdCliente(int idCliente) {    
+        this.idCliente = idCliente;
+    }
+
     public float getSaldo() {
         return saldo;
     }
@@ -74,11 +89,14 @@ public class Cliente extends Usuario implements Serializable{
     
     //metodos
 
-    public void incrementarSaldo(int dinero){
-        saldo=saldo+dinero;
+    public  void incrementarSaldo(){
+        
+        int incremento = Integer.parseInt(JOptionPane.showInputDialog("¿Cuanto quieres ingresar?"));
+        this.saldo = saldo+incremento;
+        
     }
     
-    public void comprar (ArrayList <Producto> productos ,int posicion) {
+ /*   public void comprar (ArrayList <Producto> productos ,int posicion) {
         float valorProducto = productos.get(posicion).getPrecio();
         float saldo = getSaldo();
         if(valorProducto<getSaldo()){
@@ -89,6 +107,7 @@ public class Cliente extends Usuario implements Serializable{
         }
         
     }
+    */
     
 
  
